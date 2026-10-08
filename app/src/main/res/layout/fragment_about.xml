@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4368"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="16.dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/text2048"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Geme\n2048"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="@drawable/beckgroun_text_about"
+        android:lineSpacingExtra="8dp"
+        android:text="2048 o‘yini sonlar bilan, aqlni charxlar har dam,\n
+Bir xil raqam qo‘shilganda, kattalashar qadamma-qadam.\n
+2 dan boshlab yo‘l olar, maqsad esa 2048,\n
+Har bir yurish muhim bunda, xato qilma hech bekor.\n
+Mantiq, sabr va hisob birlashadi bu maydonda,n
+2048ga yetgan g‘olib bo‘lar oxir-oqibat sahnada."
+        app:layout_constraintTop_toBottomOf="@id/text2048"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
